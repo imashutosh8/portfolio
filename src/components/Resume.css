@@ -1,0 +1,136 @@
+.resume-page {
+  padding-bottom: 20px;
+}
+
+.resume-header {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 100px;
+}
+
+.resume-title {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.resume-section {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.resume-col {
+  flex: 1;
+}
+
+.resume-col-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.resume-col-title::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--accent-yellow);
+  border-radius: 50%;
+}
+
+.resume-item {
+  margin-bottom: 40px;
+}
+
+.resume-period {
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.resume-block {
+  background-color: var(--accent-purple);
+  color: #000;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.resume-block-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.resume-block-subtitle {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.resume-block-info {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.resume-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Skills/Languages grid rows */
+.resume-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.resume-skill-item {
+  font-size: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.resume-skill-item:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .resume-section {
+    flex-direction: column;
+    gap: 30px;
+    /* was 40px */
+    margin-bottom: 40px;
+    /* was 60px */
+  }
+
+  .resume-item {
+    margin-bottom: 28px;
+    /* was 40px */
+  }
+
+  .resume-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+.pill-btn {
+  padding: 8px 16px;
+  /* reduce size */
+  font-size: 14px;
+  /* smaller text */
+  border-radius: 999px;
+  /* keeps pill shape */
+}
+
+.resume-header .pill-btn {
+  margin-top: 20px;
+  /* small tweak for perfect alignment */
+}

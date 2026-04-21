@@ -1,0 +1,18 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  min-height: 779px;
+  padding-bottom: 20px;
+}
+
+.no-scroll-main {
+  height: calc(100vh - 149px); /* 100vh minus 69px header minus 80px footer */
+  min-height: unset;
+  padding-bottom: 0;
+  overflow: hidden;
+}

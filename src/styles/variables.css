@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #151515;
+  --text-primary: #f8f6f0;
+  --text-secondary: #a3a3a3;
+  --accent-purple: #b5a8fb;
+  --accent-yellow: #d8ce3f;
+  
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(255, 255, 255, 0.2);
+  
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+}
