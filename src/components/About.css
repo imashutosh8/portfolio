@@ -131,3 +131,32 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .about-hello {
+    font-size: 50px;
+  }
+  
+  .about-hello-wrapper {
+    padding: 30px 20px 20px 20px;
+  }
+  
+  .about-author {
+    padding: 20px;
+  }
+
+  .about-intro-large {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .about-intro-small {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .about-social-widget {
+    width: 60px;
+    height: 60px;
+  }
+}
