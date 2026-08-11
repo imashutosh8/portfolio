@@ -2,7 +2,7 @@
 
 A clean, minimal, and fully responsive personal portfolio website built with **React** and **Vite**. Showcases my projects, skills, experience, and contact information with a polished dark/light theme toggle.
 
-🔗 **Live Site:** [your-vercel-url.vercel.app](https://your-vercel-url.vercel.app)
+🔗 **Live Site:** [ashutoshverma8.vercel.app](https://ashutoshverma8.vercel.app/)
 
 ---
 
