@@ -1,27 +1,111 @@
-# React + Vite
+# Ashutosh Verma — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, minimal, and fully responsive personal portfolio website built with **React** and **Vite**. Showcases my projects, skills, experience, and contact information with a polished dark/light theme toggle.
 
-Currently, two official plugins are available:
+🔗 **Live Site:** [your-vercel-url.vercel.app](https://your-vercel-url.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Dark / Light mode** — theme toggle with persistent preference via `localStorage`
+- **Smooth scroll navigation** — active section detection via IntersectionObserver
+- **Responsive design** — optimized for mobile, tablet, and desktop
+- **Skills marquee** — animated horizontal scroll of tech skills
+- **Live clock** — real-time IST clock in the About section
+- **Resume download** — direct CV download link
+- **Contact section** — email link + all social profiles
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
 
+| Layer | Technology |
+|---|---|
+| UI Framework | React 18 |
+| Build Tool | Vite |
+| Styling | Vanilla CSS with CSS Variables |
+| Icons | Lucide React |
+| Fonts | Inter, JetBrains Mono (Google Fonts) |
+| Deployment | Vercel |
 
+---
 
+## 📁 Project Structure
 
-From the project folder, run:
+```
+src/
+├── components/
+│   ├── Navbar.jsx / Navbar.css
+│   ├── About.jsx / About.css
+│   ├── ProjectsPortfolio.jsx / ProjectsPortfolio.css
+│   ├── Resume.jsx / Resume.css
+│   ├── Contact.jsx / Contact.css
+│   └── Footer.jsx / Footer.css
+├── data/
+│   └── portfolio.js        # All content lives here
+├── styles/
+│   ├── variables.css        # Design tokens & CSS variables
+│   └── global.css
+└── index.css                # Base styles & utilities
+```
 
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js `>=18`
+- npm
+
+### Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/imashutosh8/portfolio.git
+cd portfolio
+
+# Install dependencies
 npm install
-npm run dev
-Vite will print a local URL, usually http://localhost:5173/. Open that in your browser.
 
-To stop it, go back to the terminal where it’s running and press Ctrl + C, then confirm with Y if PowerShell asks
+# Start development server
+npm run dev
+```
+
+Vite will start at **http://localhost:5173**
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+Output goes to the `dist/` folder.
+
+---
+
+## ✏️ Customization
+
+All site content (name, bio, projects, skills, experience, certifications, social links) is centralized in one file:
+
+```
+src/data/portfolio.js
+```
+
+Edit that file to update your details — no changes needed elsewhere.
+
+---
+
+## 📬 Contact
+
+- **Email:** ashutosh.verma1132@gmail.com
+- **LinkedIn:** [vermaashutosh8](https://www.linkedin.com/in/vermaashutosh8/)
+- **GitHub:** [imashutosh8](https://github.com/imashutosh8)
+- **LeetCode:** [vermaashutosh_](https://leetcode.com/u/vermaashutosh_/)
+- **X (Twitter):** [@vermaashutosh_](https://x.com/vermaashutosh_)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
