@@ -2,40 +2,61 @@ import React from 'react';
 import { PROJECTS } from '../data/portfolio';
 import './ProjectsPortfolio.css';
 
+const ArrowIcon = () => (
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="project-arrow"
+  >
+    <path d="M7 7h10v10M7 17 17 7" />
+  </svg>
+);
+
 const ProjectsPortfolio = () => {
   return (
-    <div className="container">
-      <div className="projects-page">
-        <h1 className="projects-title">Projects</h1>
-        
+    <section id="projects" className="projects-section section">
+      <div className="container">
+        <div className="section-label">Projects</div>
+
         <div className="projects-list">
           {PROJECTS.map((project, idx) => {
-            const num = (idx + 1).toString().padStart(2, '0');
+            const num = String(idx + 1).padStart(2, '0');
             return (
-              <a 
-                href={project.link} 
-                target="_blank" 
-                rel="noreferrer" 
-                key={idx} 
+              <a
+                key={idx}
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
                 className="project-item"
               >
-                <div className="project-title-area">
-                  <span className="project-index">{num}</span>
-                  <span className="project-name">{project.title}</span>
-                </div>
-                <div className="project-meta">
-                  {project.description}
-                  <br />
-                  <span style={{ fontSize: '14px', marginTop: '4px', display: 'block' }}>
-                    {project.tech.join(' • ')}
-                  </span>
+                <div className="project-item-inner">
+                  <span className="project-num">{num}</span>
+
+                  <div className="project-body">
+                    <div className="project-title-row">
+                      <h3 className="project-title">{project.title}</h3>
+                      <ArrowIcon />
+                    </div>
+                    <p className="project-desc">{project.description}</p>
+                    <div className="project-tags">
+                      {project.tech.map((t, i) => (
+                        <span key={i} className="tag">{t}</span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </a>
             );
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

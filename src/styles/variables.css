@@ -1,17 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,300;1,14..32,400&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-  --bg-primary: #151515;
-  --text-primary: #f8f6f0;
-  --text-secondary: #a3a3a3;
-  --accent-purple: #b5a8fb;
-  --accent-yellow: #d8ce3f;
-  
+  /* Backgrounds */
+  --bg-primary: #0d0d0d;
+  --bg-surface: #141414;
+  --bg-card: #1a1a1a;
+  --bg-card-hover: #1f1f1f;
+
+  /* Text */
+  --text-primary: #f0ede8;
+  --text-secondary: #888888;
+  --text-muted: #555555;
+
+  /* Accent — used sparingly */
+  --accent-lime: #c8ff00;
+  --accent-lime-dim: rgba(200, 255, 0, 0.12);
+
+  /* Borders */
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.16);
+  --border-strong: rgba(255, 255, 255, 0.12);
+
+  /* Typography */
   --font-main: 'Inter', system-ui, -apple-system, sans-serif;
-  --border-color: rgba(255, 255, 255, 0.1);
-  --border-hover: rgba(255, 255, 255, 0.2);
-  
-  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --transition-fast: 0.2s ease;
-  --transition-base: 0.3s ease;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.6);
+
+  /* Transitions */
+  --transition-fast: 0.18s ease;
+  --transition-base: 0.28s ease;
+  --transition-slow: 0.45s ease;
+
+  /* Layout */
+  --nav-height: 64px;
+  --max-width: 760px;
+  --section-padding: 64px;
+}
+
+/* ── Light Mode Overrides ── */
+[data-theme="light"] {
+  /* Backgrounds */
+  --bg-primary: #fafaf9;
+  --bg-surface: #f2f1ee;
+  --bg-card: #ebebе8;
+  --bg-card-hover: #e4e3e0;
+
+  /* Text */
+  --text-primary: #1a1a1a;
+  --text-secondary: #606060;
+  --text-muted: #999999;
+
+  /* Accent */
+  --accent-lime: #5c8500;
+  --accent-lime-dim: rgba(92, 133, 0, 0.1);
+
+  /* Borders */
+  --border-color: rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(0, 0, 0, 0.16);
+  --border-strong: rgba(0, 0, 0, 0.12);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.16);
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import About from './components/About';
@@ -8,16 +8,14 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  const [activeTab, setActiveTab] = useState('about');
-
   return (
     <div className="App">
-      <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
-      <main className={(activeTab === 'about' || activeTab === 'contact') ? 'no-scroll-main' : ''}>
-        {activeTab === 'about' && <About setActiveTab={setActiveTab} />}
-        {activeTab === 'resume' && <Resume />}
-        {activeTab === 'projects' && <ProjectsPortfolio />}
-        {activeTab === 'contact' && <Contact />}
+      <Navbar />
+      <main>
+        <About />
+        <ProjectsPortfolio />
+        <Resume />
+        <Contact />
       </main>
       <Footer />
     </div>
